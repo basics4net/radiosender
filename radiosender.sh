@@ -7,7 +7,7 @@ echo "  /_.___/\__,_/____/_/\___/____/  /_/ /_/ /_/\___/\__/"
 echo ""
 
 PS3="Bitte wählen : "
-select auswahl in "SRF 1" "SRF 2" "SRF 3" "Energy Bern" "Radio Swiss Pop" "Radio Swiss Classic" "Radio Sunshine Schweiz" "Radio Sunshine Belgien" "Radio Bern 1" "Radio Bern RaBe" "Radio BE-Oberland" "Radio 24" "Energy 80s" "Radio Seefunk" "SRF Musikwelle" "Schlagerhölle" "Radio 32" "Radio 32 Goldies" "Radio 32 Schlager" "Radio 32 Rock" "Radio 32 Hits" "Radio 32 Special" Ende
+select auswahl in "SRF 1" "SRF 2" "SRF 3" "La 1ere" "Espace2" "Couleur3" "Option Musique" "Energy Bern" "Radio Swiss Pop" "Radio Swiss Classic" "Radio Sunshine Schweiz" "Radio Sunshine Belgien" "Radio Bern 1" "Radio Bern RaBe" "Radio BE-Oberland" "Radio 24" "Energy 80s" "Radio Seefunk" "SRF Musikwelle" "Schlagerhölle" "Radio 32" "Radio 32 Goldies" "Radio 32 Schlager" "Radio 32 Rock" "Radio 32 Hits" "Radio 32 Special" Ende
 do
    case "$auswahl" in
       Ende)  echo "Ende" ; break ;;
@@ -18,6 +18,14 @@ do
 		"SRF 2") mpv http://stream.srg-ssr.ch/m/drs2/mp3_128 ;;
 
 		"SRF 3") mpv http://stream.srg-ssr.ch/m/drs3/mp3_128 ;;
+
+		"La 1ere") mpv http://stream.srg-ssr.ch/m/la-1ere/mp3_128 ;;
+
+		"Espace2") mpv http://stream.srg-ssr.ch/m/espace-2/mp3_128 ;;
+
+		"Couleur3") mpv http://stream.srg-ssr.ch/m/couleur3/mp3_128 ;;
+
+		"Option Musique") mpv http://stream.srg-ssr.ch/m/option-musique/mp3_128 ;;
 
 		"Energy Bern") mpv http://energybern.ice.infomaniak.ch:80/energybern-high ;;
 
