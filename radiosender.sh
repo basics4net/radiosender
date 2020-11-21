@@ -16,7 +16,7 @@ echo ""
 
 
 PS3="Your selection: "
-select auswahl in "SRF 1" "SRF 2" "SRF 3" "La 1ere" "Espace2" "Couleur3" "Option Musique" "Energy Bern" "Radio Swiss Pop" "Radio Swiss Classic" "Radio Pilatus" "Radio Sunshine Schweiz" "Radio Sunshine Belgien" "Radio Bern 1" "Radio Bern RaBe" "Radio BE-Oberland" "Radio 24" "Energy 80s" "Radio Seefunk" "SRF Musikwelle" "Radio Enzian" "Schlagerparadies" "Radio 32" "Radio 32 Goldies" "Radio 32 Schlager" "Radio 32 Rock" "Radio 32 Hits" "Radio 32 Special" "Deep Web c0vert Electr0" "Deep Web Lush" "Deep Web Groove Salad" "Deep Web Drone Zone" "Deep Web Deep Space One" "Deep Web Deep Banjo" "Deep Web Dark Ret" "Deep Web Baroque Radio" "Deep Web Anony Radio" "Deep Web Anony Jazz" End
+select auswahl in "SRF 1" "SRF 2" "SRF 3" "La 1ere" "Espace2" "Couleur3" "Option Musique" "Radio Rottu Oberwallis" "Swiss Melody" "Müsig pur" "Walliser Geschichte" "Energy Bern" "Radio Swiss Pop" "Radio Swiss Classic" "Radio Pilatus" "Radio Sunshine Schweiz" "Radio Sunshine Belgien" "Radio Bern 1" "Radio Bern RaBe" "Radio BE-Oberland" "Radio 24" "Energy 80s" "Radio Seefunk" "SRF Musikwelle" "Radio Enzian" "Schlagerparadies" "Radio 32" "Radio 32 Goldies" "Radio 32 Schlager" "Radio 32 Rock" "Radio 32 Hits" "Radio 32 Special" "Deep Web c0vert Electr0" "Deep Web Lush" "Deep Web Groove Salad" "Deep Web Drone Zone" "Deep Web Deep Space One" "Deep Web Deep Banjo" "Deep Web Dark Ret" "Deep Web Baroque Radio" "Deep Web Anony Radio" "Deep Web Anony Jazz" End
 do
    case "$auswahl" in
       End)  echo -e "\n\e[3m powered by \033[1mbasics4net \n" ; tput sgr0 ; echo -e "see \033[1mhttps://basics4net.ch" ; tput sgr0 ; echo -e " or \033[1mhttp://summo.ch\n" ; break ;;
@@ -35,6 +35,14 @@ do
 		"Couleur3") mpv http://stream.srg-ssr.ch/m/couleur3/mp3_128 ;;
 
 		"Option Musique") mpv http://stream.srg-ssr.ch/m/option-musique/mp3_128 ;;
+
+		"Radio Rottu Oberwallis") mpv https://streams.rro.ch/rro.mp3?usid=0-0-H-M-A-01 ;;
+
+		"Swiss Melody") mpv https://streams.rro.ch/swissmelody.mp3?usid=0-0-H-M-A-01 ;;
+
+		"Müsig pur") mpv https://streams.rro.ch/muesigpur.mp3?usid=0-0-H-M-A-01 ;;
+
+		"Walliser Geschichte") mpv https://streams.rro.ch/event.mp3 ;;
 
 		"Energy Bern") mpv http://energybern.ice.infomaniak.ch:80/energybern-high ;;
 
